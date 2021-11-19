@@ -3,7 +3,9 @@ Colors:
  - secondary: #5E9AF1
 
 Font:
- - <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+ - <link rel="stylesheet" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
  (css: font-family: 'Open Sans', sans-serif;)
 
 Tasks:
