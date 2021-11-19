@@ -1,1 +1,19 @@
+body {
+    font-family: 'Open Sans', sans-serif;
+    margin: 0px;
+}
 
+.header {
+    background-color: #FEC675;
+    height: 110px;
+    margin-top: 0px;
+    padding: 0px;
+}
+
+.header h1 {
+    color: white;
+    font-weight: 300;
+    font-size: 48px;
+    margin: 0px;
+    padding: 20px;
+}
