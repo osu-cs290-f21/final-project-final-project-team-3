@@ -8,6 +8,7 @@ body {
     height: 110px;
     margin-top: 0px;
     padding: 0px;
+    box-shadow: 0px 10px 50px rgba(0, 0, 0, 0.1);
 }
 
 .header h1 {
@@ -16,4 +17,64 @@ body {
     font-size: 48px;
     margin: 0px;
     padding: 20px;
+}
+
+.name-container {
+    /* background-color: red; */
+    height: 180px;
+    padding-top: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 400;
+    font-size: 36px;
+}
+
+#name-text {
+    margin-left: 15px;
+    margin-bottom: 10px;
+    height: 40px;
+    width: 600px;
+    font-size: 28px;
+    border-radius: 5px;
+}
+
+#subtitle-container {
+    /* background-color: purple; */
+    height: 100px;
+    padding: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#subtitle {
+    font-weight: 400;
+    font-size: 36px;
+}
+
+#button-container {
+    /* background-color: green; */
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.testing-button {
+    height: 150px;
+    width: 600px;
+    margin: 30px;
+    font-size: 70px;
+    font-weight: bold;
+    border-radius: 30px;
+    border: 0px;
+    background-color: #5E9AF1;
+    color: white;
+}
+
+.testing-button:hover {
+    background-color: lightgray;
+    color: #5E9AF1;
+    cursor: pointer;
 }
