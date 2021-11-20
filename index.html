@@ -3,35 +3,33 @@
 <html>
 
     <head>
+        <meta charset="utf-8">
         <title> Website Title </title>
 
-        <link href = "https://fonts.googleapis.com/%22%3E" rel = "stylesheet">
-        <link rel = "stylesheet" href = "https://fonts.gstatic.com/" crossorigin = "">
-        <link href = "https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel = "stylesheet">  
+        <link href = "https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap" rel = "stylesheet">  
+        <link rel="stylesheet" href="style.css">
+        <script src="https://kit.fontawesome.com/ec200d7655.js" crossorigin="anonymous"></script>
     </head>
 
     <body>
 
-        <div>
+        <div class="header">
+            <div id="icon-container">
+                <i class="far fa-user"></i>
+            </div>
             <h1> Website Title </h1>
         </div>
 
-        <div>
-            <label for = "name-text" class = "name-input-label"> Name </label>
+        <div id="subtitle-container">
+            <h3 id="subtitle"> Test your... </h3>
+        </div>  
 
-            <div>
-                <input type = "text" name = "name-text" id = "name-text">
-            </div>
+        <div id="button-container">  
+            <ul>
+                <button class = "testing-button" id = "reaction-button"> Reaction </button>
+                <button class = "testing-button" id = "memory-button"> Memory </button>
+            </ul>    
         </div>
-        
-        <div>
-            <h3> Test your... </h3>
-        </div>
-        
-        <ul>
-            <button class = "testing-button" id = "reaction-button"> Reaction </button>
-            <button class = "testing-button" id = "memory-button"> Memory </button>
-        </ul>
 
     </body>
 
