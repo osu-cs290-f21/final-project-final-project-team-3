@@ -1,1 +1,186 @@
+body {
+    font-family: 'Open Sans', sans-serif;
+    margin: 0px;
+}
 
+.header {
+    background-color: #FEC675;
+    height: 130px;
+    margin-top: 0px;
+    padding: 0px;
+    box-shadow: 0px 10px 50px rgba(0, 0, 0, 0.1);
+}
+
+.header h1 {
+    color: white;
+    font-weight: 400;
+    font-size: 50px;
+    margin: 0px;
+    /* padding: 20px; */
+    display: inline-block;
+}
+
+#icon-container {
+    color: white;
+    display: inline-block;
+    padding: 20px 30px;
+}
+
+.fa-user {
+    font-size: 75px;
+}
+
+#subtitle-container {
+    height: 50px;
+    margin-top: 100px;
+    margin-bottom: 50px;
+    padding: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#subtitle {
+    font-weight: bold;
+    font-size: 80px;
+    color: #FEC675;
+}
+
+#button-container {
+    height: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.testing-button {
+    height: 150px;
+    width: 500px;
+    margin: 60px;
+    font-size: 70px;
+    font-weight: bold;
+    border-radius: 30px;
+    border: 0px;
+    background-color: #5E9AF1;
+    color: white;
+}
+
+.testing-button:hover {
+    background-color: lightgray;
+    color: #5E9AF1;
+    cursor: pointer;
+}
+
+/*************************
+    reaction.html CSS 
+*************************/
+
+#reaction-subtitle-container
+{
+    height: 50px;
+    margin-top: 75px;
+    margin-bottom: 50px;
+    padding: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#reaction-subtitle
+{
+    font-weight: bold;
+    font-size: 60px;
+    color: #FEC675;
+}
+
+#start-button-container 
+{
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#reaction-start-button
+{
+    height: 100px;
+    width: 400px;
+    margin: 60px;
+    font-size: 70px;
+    font-weight: bold;
+    border-radius: 30px;
+    border: 0px;
+    background-color: #5E9AF1;
+    color: white;
+}
+
+#reaction-start-button:hover 
+{
+    background-color: lightgray;
+    color: #5E9AF1;
+    cursor: pointer;
+}
+
+.time-box
+{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.time
+{
+    font-size: 25px;
+    padding: 5px;
+}
+
+.username-container
+{
+    border: 0px;
+    margin: 10px;
+    padding: 10px;
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.user-input-label
+{
+    padding: 5px;
+    font-size: 20px;
+}
+
+#username-button
+{
+    padding-left: 10px;
+}
+
+#submit-username-button
+{
+    height: 20px;
+    width: 60px;
+    font-size: 14px;
+    font-weight: bold;
+    border-radius: 5px;
+    border: 0px;
+    background-color: #5E9AF1;
+    color: white;
+}
+
+#submit-username-button:hover 
+{
+    background-color: lightgray;
+    color: #5E9AF1;
+    cursor: pointer;
+}
+
+.leaderboard-contents
+{
+    margin: 20px;
+    padding: 20px;
+    border: 0px;
+}
+
+/*************************
+    memory.html CSS 
+*************************/
