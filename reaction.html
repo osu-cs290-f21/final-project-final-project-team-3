@@ -1,13 +1,14 @@
 <!DOCTYPE html>
 <html>
   <head>
-  <meta charset="utf=8">
+  <meta charset="utf-8">
   <title> Reaction Test </title>
 
-  <link href = "https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap" rel = "stylesheet">  
+  <link href = "https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap" rel = "stylesheet">
   <link rel="stylesheet" href="style.css">
   <script src="https://kit.fontawesome.com/ec200d7655.js" crossorigin="anonymous"></script>
 
+  <script src="index.js" charset="utf-8" defer></script>
   </head>
 
   <body>
@@ -35,25 +36,21 @@
       </div>
 
       <div class = "username-container">
-        <div>
           <label for = "username" class="user-input-label">Username</label>
-        </div>
-
         <div class= "username-input-element">
-          <input type="text" name = "username-input">
-        </div>
+          <input type="text" name = "username-input" id="username-text">
+        </div> </div>
 
         <div id = "username-button">
           <button id = "submit-username-button"> Submit </button>
         </div>
       </div>
-    </div>
 
     <div class = "standings-contents">
 
       <div class = "leaderboard-contents">
 
-        <div id = "leaderboard-title"> 
+        <div id = "leaderboard-title">
           <h2> Leaderboard </h2>
         </div>
 
@@ -69,7 +66,7 @@
           <div id = "log-title">
             <h2> Personal Log </h2>
           </div>
-          
+
           <div class = "log-box">
             <div id = "first-time"> <h3> 1. </h3></div>
             <div id = "second-time"> <h3> 2. </h3></div>
