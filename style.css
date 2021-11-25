@@ -72,7 +72,7 @@ body {
 }
 
 /*************************
-    reaction.html CSS 
+    reaction.html CSS
 *************************/
 
 #reaction-subtitle-container
@@ -93,7 +93,7 @@ body {
     color: #FEC675;
 }
 
-#start-button-container 
+#start-button-container
 {
     height: 150px;
     display: flex;
@@ -114,7 +114,7 @@ body {
     color: white;
 }
 
-#reaction-start-button:hover 
+#reaction-start-button:hover
 {
     background-color: lightgray;
     color: #5E9AF1;
@@ -167,7 +167,7 @@ body {
     color: white;
 }
 
-#submit-username-button:hover 
+#submit-username-button:hover
 {
     background-color: lightgray;
     color: #5E9AF1;
@@ -181,6 +181,17 @@ body {
     border: 0px;
 }
 
+#hidden {
+  display: none;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  background-color: #bf0000;
+}
+
 /*************************
-    memory.html CSS 
+    memory.html CSS
 *************************/
