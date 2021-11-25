@@ -1,12 +1,19 @@
 var reactionButton = document.getElementById('reaction-start-button')
 var username = document.getElementById('username-text')
-
-
+var nothidden = document.getElementsByClassName('not-hidden')
+var hidden = document.getElementById('hidden')
 
 reactionButton.addEventListener('click', function() {
   test()
 });
 
+
+
+function runtest(){
+
+  while
+
+}
 
 function test(){
 
@@ -17,11 +24,12 @@ function test(){
 
   else if (username.textLength > 10 || username.textLength < 3)
   {
-    alert("Username must be within 3 and 10 characters!")
+    alert("Username must be between 3 and 10 characters long!")
   }
 
   else
   {
-    console.log("Successful Username")
+    hidden.style.display = 'block'
+    runtest()
   }
 }
