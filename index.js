@@ -2,18 +2,15 @@ var reactionButton = document.getElementById('reaction-start-button')
 var username = document.getElementById('username-text')
 var nothidden = document.getElementsByClassName('not-hidden')
 var hidden = document.getElementById('hidden')
+var green = document.getElementById('green-hidden')
+
+var flag = 0;
+
 
 reactionButton.addEventListener('click', function() {
   test()
 });
 
-
-
-function runtest(){
-
-  while
-
-}
 
 function test(){
 
@@ -29,7 +26,22 @@ function test(){
 
   else
   {
-    hidden.style.display = 'block'
     runtest()
+
+
   }
+}
+
+function runtest(){
+  hidden.style.display = 'block'
+  const random = Math.floor(Math.random() * 10000);
+  setTimeout(changeToGreen, random)
+  console.log(random)
+}
+
+function changeToGreen(){
+
+    hidden.style.display = 'none'
+    green.style.display = 'block'
+
 }
