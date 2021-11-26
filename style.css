@@ -146,6 +146,13 @@ body {
     padding: 5px;
 }
 
+.time-output
+{
+    font-size: 25px;
+    padding: 5px;
+}
+
+
 .username-container
 {
     border: 0px;

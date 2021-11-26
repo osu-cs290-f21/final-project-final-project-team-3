@@ -3,8 +3,10 @@ var username = document.getElementById('username-text')
 var nothidden = document.getElementsByClassName('not-hidden')
 var hidden = document.getElementById('hidden')
 var green = document.getElementById('green-hidden')
+var timeOutput = document.getElementsByClassName('time-output')
 
-var flag = 0;
+var sTime = 0;
+var eTime = 0;
 
 
 reactionButton.addEventListener('click', function() {
@@ -43,5 +45,17 @@ function changeToGreen(){
 
     hidden.style.display = 'none'
     green.style.display = 'block'
-
+    const starttime = new Date()
+    starttime.getTime()
+    sTime = starttime
 }
+
+green.addEventListener('click', function() {
+  const endtime = new Date()
+  endtime.getTime()
+  eTime = endtime
+  console.log(timeOutput.textContent)
+  timeOutput.textContent = "Test";
+  console.log(timeOutput.textContent)
+  green.style.display = 'none'
+});
