@@ -3,7 +3,7 @@ var username = document.getElementById('username-text')
 var nothidden = document.getElementsByClassName('not-hidden')
 var hidden = document.getElementById('hidden')
 var green = document.getElementById('green-hidden')
-var timeOutput = document.getElementsByClassName('time-output')
+var timeOutput = document.getElementById('time-output')
 
 var sTime = 0;
 var eTime = 0;
