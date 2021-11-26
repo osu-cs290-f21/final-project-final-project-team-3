@@ -54,8 +54,6 @@ green.addEventListener('click', function() {
   const endtime = new Date()
   endtime.getTime()
   eTime = endtime
-  console.log(timeOutput.textContent)
-  timeOutput.textContent = "Test";
-  console.log(timeOutput.textContent)
+  timeOutput.textContent = eTime - sTime + " ms";
   green.style.display = 'none'
 });
