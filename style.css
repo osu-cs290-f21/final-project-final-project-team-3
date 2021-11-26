@@ -71,6 +71,18 @@ body {
     cursor: pointer;
 }
 
+.testing-button a
+{
+    text-decoration: none;
+    color: white;
+}
+
+.testing-button:hover a
+{
+    text-decoration: none;
+    color: #5E9AF1;
+}
+
 /*************************
     reaction.html CSS
 *************************/
