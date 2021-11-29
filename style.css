@@ -200,6 +200,13 @@ body {
     border: 0px;
 }
 
+.log-contents
+{
+    margin: 20px;
+    padding: 20px;
+    border: 0px;
+}
+
 #green-hidden {
   display: none;
   position: fixed;
