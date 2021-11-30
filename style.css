@@ -208,6 +208,18 @@ body {
     border: 0px;
 }
 
+.place-box
+{
+  font-size: 25px;
+  line-height: 2;
+}
+
+.log-box
+{
+  font-size: 25px;
+  line-height: 2;
+}
+
 #green-hidden {
   display: none;
   position: fixed;
@@ -238,7 +250,7 @@ img {
 }
 
 .hidden {
-    display: none; 
+    display: none;
 }
 
 header {
@@ -346,4 +358,3 @@ h2 {
 .background-info {
     border: 2px solid black;
 }
-

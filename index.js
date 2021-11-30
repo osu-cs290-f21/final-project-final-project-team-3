@@ -4,6 +4,7 @@ var nothidden = document.getElementsByClassName('not-hidden')
 var hidden = document.getElementById('hidden')
 var green = document.getElementById('green-hidden')
 var timeOutput = document.getElementById('time-output')
+var firstTime = document.querySelector("h3.first-time")
 
 var sTime = 0;
 var eTime = 0;
@@ -56,4 +57,10 @@ green.addEventListener('click', function() {
   eTime = endtime
   timeOutput.textContent = eTime - sTime + " ms";
   green.style.display = 'none'
+
 });
+
+function updatelog(time)
+{
+  firstTime.textContent = "1. " + username + "  " + time + " ms"
+}
