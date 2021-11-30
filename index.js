@@ -39,7 +39,6 @@ function runtest(){
   hidden.style.display = 'block'
   const random = Math.floor(Math.random() * 5000);
   setTimeout(changeToGreen, random)
-  console.log(random)
 }
 
 function changeToGreen(){
