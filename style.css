@@ -1,5 +1,6 @@
 body {
     font-family: 'Open Sans', sans-serif;
+    background: linear-gradient(0deg, rgba(145,216,255,1) 0%, rgba(255,255,255,1) 100%) fixed;
     margin: 0px;
 }
 
@@ -232,3 +233,131 @@ body {
 /*************************
     memory.html CSS
 *************************/
+img {
+    display: block;
+}
+
+.hidden {
+    display: none; 
+}
+
+header {
+    background-color: #FEC675;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+header a {
+    color: black;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.site-title {
+    text-decoration: none;
+    font-size: 50px;
+    font-weight: 400;
+    margin: 0 0 0 20px;
+    padding-top: 30px;
+}
+.site-title a:hover {
+    text-decoration: none;
+}
+
+.content {
+    display: block;
+}
+
+.memory-container {
+    background: rgba(145,216,255,1);
+    display: flex;
+    justify-content: center;
+    position: relative;
+    text-align: center;
+    align-items: center;
+    padding-bottom: 24px;
+    padding-top: 8px;
+}
+
+.memory-description {
+    margin: 80px;
+}
+
+.memory-description p {
+    padding-top: 16px;
+}
+
+.memory-start-button {
+    background-color: rgb(255, 209, 84);
+    border: none;
+    color: black;
+    padding: 8px 16px;
+    font-size: 16px;
+    font-weight: bold;
+    transition: 0.2s;
+    display: inline-block;
+    cursor: pointer;
+    border-radius: 3px;
+    opacity: 0.9;
+}
+
+.memory-start-button:hover {
+    opacity: 1
+}
+
+.memory-description p {
+    font-weight: bold;
+}
+
+.leaderboard-contents-memory {
+    border: 2px solid black;
+    display: inline-block;
+    justify-content: center;
+    padding: 16px;
+    margin: 16px;
+}
+
+.activity-history-contents {
+    border: 2px solid black;
+    display: inline-block;
+    justify-content: center;
+    padding: 16px;
+    margin: 16px;
+}
+
+.leaderboard-container {
+    padding-top: 16px;
+    justify-content: center;
+    text-align: center;
+}
+
+h2 {
+    margin: 0px;
+    text-decoration: underline;
+}
+
+.background-info {
+    border: 2px solid black;
+}
+
+#dashboard-button {
+    position: fixed;
+    right: 30px;
+    bottom: 30px;
+    height: 60px;
+    width: 60px;
+    border: none;
+    border-radius: 30px;
+    font-size: 36px;
+    background-color: #f67811;
+    color: #fff;
+    cursor: pointer;
+    box-shadow: 4px 4px 12px rgba(0, 0, 0, 0.25);
+  }
