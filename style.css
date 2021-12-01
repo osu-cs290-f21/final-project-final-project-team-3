@@ -359,3 +359,24 @@ h2 {
 .background-info {
     border: 2px solid black;
 }
+
+/*************************
+    404.html CSS
+*************************/
+
+.error-container {
+    font-family: 'Open Sans', sans-serif;
+    text-align: center;
+  }
+  
+  .error-container h2 {
+    font-size: 128px;
+    text-decoration: none;
+    margin-top: 50px;
+    margin-bottom: 0;
+  }
+  
+  .error-container h3 {
+    font-size: 32px;
+    margin: 0;
+  }
