@@ -103,7 +103,7 @@ body {
 #reaction-subtitle
 {
     font-weight: bold;
-    font-size: 60px;
+    font-size: 50px;
     color: #FEC675;
 }
 
@@ -289,7 +289,7 @@ a:hover {
 }
 
 .memory-container {
-    background: rgba(145,216,255,1);
+    /* background: rgba(145,216,255,1); */
     display: flex;
     justify-content: center;
     position: relative;
@@ -305,10 +305,13 @@ a:hover {
 
 .memory-description p {
     padding-top: 16px;
+    font-weight: bold;
+    font-size: 36px;
+    color: #FEC675;
 }
 
 .memory-start-button {
-    background-color: rgb(255, 209, 84);
+    /* background-color: rgb(255, 209, 84);
     border: none;
     color: black;
     padding: 8px 16px;
@@ -318,11 +321,24 @@ a:hover {
     display: inline-block;
     cursor: pointer;
     border-radius: 3px;
-    opacity: 0.9;
+    opacity: 0.9; */
+    height: 100px;
+    width: 400px;
+    margin: 60px;
+    margin-top: 0px;
+    font-size: 70px;
+    font-weight: bold;
+    border-radius: 30px;
+    border: 0px;
+    background-color: #5E9AF1;
+    color: white;
 }
 
 .memory-start-button:hover {
-    opacity: 1
+    /* opacity: 1 */
+    background-color: lightgray;
+    color: #5E9AF1;
+    cursor: pointer;
 }
 
 .memory-description p {
