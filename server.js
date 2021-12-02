@@ -21,7 +21,7 @@ app.get('/memory', function(req, res) {
 })
 
 app.get('*', function(req, res, next) {
-    res.status(200).render('404')
+    res.status(200).render('404', {page: 'Human Benchmark Tests'})
 })
 
 app.listen(port, function () {
