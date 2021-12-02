@@ -3,45 +3,45 @@
         "globalLeaderboard": [
             {
                 "name": "",
-                "time": 0
+                "score": 0
             },
             {
                 "name": "",
-                "time": 0
+                "score": 0
             },
             {
                 "name": "",
-                "time": 0
+                "score": 0
             },
             {
                 "name": "",
-                "time": 0
+                "score": 0
             },
             {
                 "name": "",
-                "time": 0
+                "score": 0
             }
         ],
         "personalLog": [
             {
                 "name": "",
-                "time": 0
+                "score": 0
             },
             {
                 "name": "",
-                "time": 0
+                "score": 0
             },
             {
                 "name": "",
-                "time": 0
+                "score": 0
             },
             {
                 "name": "",
-                "time": 0
+                "score": 0
             },
             {
                 "name": "",
-                "time": 0
+                "score": 0
             }
         ]
     },
@@ -49,45 +49,45 @@
         "globalLeaderboard": [
             {
                 "name": "Antonia",
-                "time": 387
+                "score": "387 ms"
             },
             {
                 "name": "Lauren",
-                "time": 470
+                "score": "470 ms"
             },
             {
                 "name": "Isaiah",
-                "time": 535
+                "score": "535 ms"
             },
             {
                 "name": "Steven",
-                "time": 542
+                "score": "542 ms"
             },
             {
                 "name": "Bob",
-                "time": 559
+                "score": "559 ms"
             }
         ],
         "personalLog": [
             {
                 "name": "",
-                "time": 0
+                "score": "0 ms"
             },
             {
                 "name": "",
-                "time": 0
+                "score": "0 ms"
             },
             {
                 "name": "",
-                "time": 0
+                "score": "0 ms"
             },
             {
                 "name": "",
-                "time": 0
+                "score": "0 ms"
             },
             {
                 "name": "",
-                "time": 0
+                "score": "0 ms"
             }
         ]
     }
