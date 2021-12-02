@@ -1,0 +1,69 @@
+<main class = "content">
+    <div class="memory-container">
+        <div class="memory-contents">
+            <div>
+                <div class="memory-description">
+                    <!-- <h1>Verbal Memory Test</h1> -->
+                    <p>If you've seen a word from the test, click SEEN. If you've seen a new word from the test, click NEW.</p>
+                </div>
+                <div class="memory-start">
+                    <button class="memory-start-button">Start</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="modal-backdrop" class="hidden"></div>
+    <div id="modal-username-input" class="hidden">
+        <div class="modal-dialog">
+            <div class="modal-header">
+                <h3>Save your score by signing your name!</h3>
+                <button type="button" id="modal-close" class="modal-hide-button">&times</button>
+            </div>
+
+            <div class="modal-body">
+                <div class="username-input-element">
+                    <label for="username-input">Username</label>
+                    <input type="text" name="username-input-element" id="username-input-element" class="username-input" placeholder= "Enter your username here">
+                </div>
+            </div>
+
+            <div class="modal-footer">
+                <button type="button" id="modal-cancel" class="modal-hide-button action-button">Cancel</button>
+                <button type="button" id="modal-submit" class="submit-button">Submit</button>
+            </div>
+        </div>
+    </div>
+    <div class="dividing-line">
+        <div></div>
+        <div></div>
+    </div>
+
+    <div class = "leaderboard-contents">
+
+        <div id = "leaderboard-title">
+            <h2> Leaderboard </h2>
+        </div>
+
+        <div class = "place-box">
+            <ol>
+            <li> </li>
+            <li> </li>
+            <li> </li>
+            <li> </li>
+            <li> </li>
+        </ol>
+        </div>
+        </div>
+
+        <div class = "log-contents">
+            <div id = "log-title">
+            <h2> Personal Log </h2>
+            </div>
+
+            <div class = "log-box">
+            <ol id="log-list">
+            </ol>
+            </div>
+        </div>
+    </div>
+</main>
