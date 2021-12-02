@@ -19,17 +19,17 @@ app.get('/reaction', function(req, res) {
         page: 'Reaction Test',
         globalLeaderboard: leaderboardData.reaction.globalLeaderboard,
         personalLog: leaderboardData.reaction.personalLog
-
     })
 })
 
 app.get('/memory', function(req, res) {
-    res.status(200).render('memory', {page: 'Memory Test'})
+    res.status(200).render('memory', {
+        test: 'Memory',
+        page: 'Memory Test',
+        globalLeaderboard: leaderboardData.memory.globalLeaderboard,
+        personalLog: leaderboardData.memory.personalLog
+    })
 })
-
-// app.get('leaderboard', function(req, res) {
-//     res.status(200).render('leaderboard', {page: 'Leaderboards'})
-// })
 
 app.get('*', function(req, res, next) {
     res.status(200).render('404', {page: 'Human Benchmark Tests'})
