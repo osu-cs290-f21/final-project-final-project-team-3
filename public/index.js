@@ -9,7 +9,6 @@ var loglist = document.getElementById('log-list')
 var sTime = 0;
 var eTime = 0;
 
-
 reactionButton.addEventListener('click', function() {
   console.log("event listener")
   runtest()
