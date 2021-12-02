@@ -1,0 +1,94 @@
+{
+    "memory": {
+        "globalLeaderboard": [
+            {
+                "name": "",
+                "time": 0
+            },
+            {
+                "name": "",
+                "time": 0
+            },
+            {
+                "name": "",
+                "time": 0
+            },
+            {
+                "name": "",
+                "time": 0
+            },
+            {
+                "name": "",
+                "time": 0
+            }
+        ],
+        "personalLog": [
+            {
+                "name": "",
+                "time": 0
+            },
+            {
+                "name": "",
+                "time": 0
+            },
+            {
+                "name": "",
+                "time": 0
+            },
+            {
+                "name": "",
+                "time": 0
+            },
+            {
+                "name": "",
+                "time": 0
+            }
+        ]
+    },
+    "reaction": {
+        "globalLeaderboard": [
+            {
+                "name": "Antonia",
+                "time": 387
+            },
+            {
+                "name": "Lauren",
+                "time": 470
+            },
+            {
+                "name": "Isaiah",
+                "time": 535
+            },
+            {
+                "name": "Steven",
+                "time": 542
+            },
+            {
+                "name": "Bob",
+                "time": 559
+            }
+        ],
+        "personalLog": [
+            {
+                "name": "",
+                "time": 0
+            },
+            {
+                "name": "",
+                "time": 0
+            },
+            {
+                "name": "",
+                "time": 0
+            },
+            {
+                "name": "",
+                "time": 0
+            },
+            {
+                "name": "",
+                "time": 0
+            }
+        ]
+    }
+}

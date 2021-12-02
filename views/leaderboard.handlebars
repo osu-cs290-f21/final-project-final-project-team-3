@@ -1,0 +1,30 @@
+<div class = "standings-contents">
+    <div class = "leaderboard-contents">
+
+        <div id = "leaderboard-title">
+            <h2> {{test}} Leaderboard </h2>
+        </div>
+
+        <div class = "place-box">
+            <ol id="board-list">
+                {{#each globalLeaderboard}}
+                    {{> leaderboardItem}}
+                {{/each}}
+            </ol>
+        </div>
+    </div>
+
+    <div class = "log-contents">
+        <div id = "log-title">
+            <h2> {{test}} Personal Log </h2>
+        </div>
+
+        <div class = "log-box">
+            <ol id="log-list">
+                {{#each personalLog}}
+                    {{> leaderboardItem}}
+                {{/each}}
+            </ol>
+        </div>
+    </div>
+</div>
