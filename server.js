@@ -5,6 +5,7 @@ var port = process.env.PORT || 3000;
 
 app.engine('handlebars', exphbs.engine({defaultLayout: 'main'}))
 app.set('view engine', 'handlebars')
+var leaderboardData = require('./leaderboardData')
 
 app.use(express.static('public'));
 
@@ -13,7 +14,13 @@ app.get('/', function(req, res) {
 })
 
 app.get('/reaction', function(req, res) {
-    res.status(200).render('reaction', {page: 'Reaction Test'})
+    res.status(200).render('reaction', {
+        test: 'Reaction',
+        page: 'Reaction Test',
+        globalLeaderboard: leaderboardData.reaction.globalLeaderboard,
+        personalLog: leaderboardData.reaction.personalLog
+
+    })
 })
 
 app.get('/memory', function(req, res) {
