@@ -11,31 +11,33 @@ var eTime = 0;
 
 
 reactionButton.addEventListener('click', function() {
-  test()
+  console.log("event listener")
+  runtest()
 });
 
 
-function test(){
+// function test(){
 
-  if (username.textLength == 0)
-  {
-      alert("You must first enter a username!")
-  }
+  // if (username.textLength == 0)
+  // {
+  //     alert("You must first enter a username!")
+  // }
 
-  else if (username.textLength > 10 || username.textLength < 3)
-  {
-    alert("Username must be between 3 and 10 characters long!")
-  }
+  // else if (username.textLength > 10 || username.textLength < 3)
+  // {
+  //   alert("Username must be between 3 and 10 characters long!")
+  // }
 
-  else
-  {
-    runtest()
+  // else
+  // {
+  //   runtest()
 
 
-  }
-}
+  // }
+// }
 
 function runtest(){
+  console.log("running test")
   hidden.style.display = 'block'
   const random = Math.floor(Math.random() * 5000);
   setTimeout(changeToGreen, random)
@@ -62,6 +64,10 @@ green.addEventListener('click', function() {
 
 function updatelog(time)
 {
+  // open modal to get username
+  var modal = document.getElementById('modal-username-input')
+  modal.style.display = 'block'
+
   var node = document.createElement('li')
   node.appendChild(document.createTextNode("   " + time + '  ms'))
   loglist.appendChild(node);

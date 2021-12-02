@@ -9,15 +9,15 @@ app.set('view engine', 'handlebars')
 app.use(express.static('public'));
 
 app.get('/', function(req, res) {
-    res.status(200).render('homePage')
+    res.status(200).render('homePage', {page: 'Human Benchmark'})
 })
 
 app.get('/reaction', function(req, res) {
-    res.status(200).render('reaction')
+    res.status(200).render('reaction', {page: 'Reaction Test'})
 })
 
 app.get('/memory', function(req, res) {
-    res.status(200).render('memory')
+    res.status(200).render('memory', {page: 'Memory Test'})
 })
 
 app.get('*', function(req, res, next) {
