@@ -20,8 +20,12 @@ app.get('/memory', function(req, res) {
     res.status(200).render('memory', {page: 'Memory Test'})
 })
 
+// app.get('leaderboard', function(req, res) {
+//     res.status(200).render('leaderboard', {page: 'Leaderboards'})
+// })
+
 app.get('*', function(req, res, next) {
-    res.status(200).render('404')
+    res.status(200).render('404', {page: 'Human Benchmark Tests'})
 })
 
 app.listen(port, function () {

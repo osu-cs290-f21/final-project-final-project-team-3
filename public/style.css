@@ -5,6 +5,8 @@ body {
 }
 
 .header {
+    display: flex;
+    align-items: center;
     background-color: #FEC675;
     height: 130px;
     margin-top: 0px;
@@ -57,7 +59,7 @@ body {
 
 .testing-button {
     height: 150px;
-    width: 500px;
+    width: 450px;
     margin: 60px;
     font-size: 70px;
     font-weight: bold;
