@@ -9,7 +9,7 @@ app.set('view engine', 'handlebars')
 app.use(express.static('public'));
 
 app.get('/', function(req, res) {
-    res.status(200).render('homePage', {page: 'Human Benchmark'})
+    res.status(200).render('homePage', {page: 'Human Benchmark Tests'})
 })
 
 app.get('/reaction', function(req, res) {
