@@ -4,6 +4,7 @@ var nothidden = document.getElementsByClassName('not-hidden')
 var hidden = document.getElementById('hidden')
 var green = document.getElementById('green-hidden')
 var timeOutput = document.getElementById('time-output')
+var loglist = document.getElementById('log-list')
 
 var sTime = 0;
 var eTime = 0;
@@ -36,9 +37,8 @@ function test(){
 
 function runtest(){
   hidden.style.display = 'block'
-  const random = Math.floor(Math.random() * 10000);
+  const random = Math.floor(Math.random() * 5000);
   setTimeout(changeToGreen, random)
-  console.log(random)
 }
 
 function changeToGreen(){
@@ -56,4 +56,13 @@ green.addEventListener('click', function() {
   eTime = endtime
   timeOutput.textContent = eTime - sTime + " ms";
   green.style.display = 'none'
+  updatelog(eTime-sTime)
+
 });
+
+function updatelog(time)
+{
+  var node = document.createElement('li')
+  node.appendChild(document.createTextNode("   " + time + '  ms'))
+  loglist.appendChild(node);
+}

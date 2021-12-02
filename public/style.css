@@ -1,5 +1,6 @@
 body {
     font-family: 'Open Sans', sans-serif;
+    background: linear-gradient(0deg, rgba(145,216,255,1) 0%, rgba(255,255,255,1) 100%) fixed;
     margin: 0px;
 }
 
@@ -28,6 +29,7 @@ body {
 
 .fa-user {
     font-size: 75px;
+    color: white;
 }
 
 #subtitle-container {
@@ -101,7 +103,7 @@ body {
 #reaction-subtitle
 {
     font-weight: bold;
-    font-size: 60px;
+    font-size: 50px;
     color: #FEC675;
 }
 
@@ -200,6 +202,25 @@ body {
     border: 0px;
 }
 
+.log-contents
+{
+    margin: 20px;
+    padding: 20px;
+    border: 0px;
+}
+
+.place-box
+{
+  font-size: 25px;
+  line-height: 2;
+}
+
+.log-box
+{
+  font-size: 25px;
+  line-height: 2;
+}
+
 #green-hidden {
   display: none;
   position: fixed;
@@ -225,3 +246,153 @@ body {
 /*************************
     memory.html CSS
 *************************/
+img {
+    display: block;
+}
+
+.hidden {
+    display: none;
+}
+
+header {
+    background-color: #FEC675;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+header a {
+    color: black;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.site-title {
+    text-decoration: none;
+    font-size: 50px;
+    font-weight: 400;
+    margin: 0 0 0 20px;
+    padding-top: 30px;
+}
+.site-title a:hover {
+    text-decoration: none;
+}
+
+.content {
+    display: block;
+}
+
+.memory-container {
+    /* background: rgba(145,216,255,1); */
+    display: flex;
+    justify-content: center;
+    position: relative;
+    text-align: center;
+    align-items: center;
+    padding-bottom: 24px;
+    padding-top: 8px;
+}
+
+.memory-description {
+    margin: 80px;
+}
+
+.memory-description p {
+    padding-top: 16px;
+    font-weight: bold;
+    font-size: 36px;
+    color: #FEC675;
+}
+
+.memory-start-button {
+    /* background-color: rgb(255, 209, 84);
+    border: none;
+    color: black;
+    padding: 8px 16px;
+    font-size: 16px;
+    font-weight: bold;
+    transition: 0.2s;
+    display: inline-block;
+    cursor: pointer;
+    border-radius: 3px;
+    opacity: 0.9; */
+    height: 100px;
+    width: 400px;
+    margin: 60px;
+    margin-top: 0px;
+    font-size: 70px;
+    font-weight: bold;
+    border-radius: 30px;
+    border: 0px;
+    background-color: #5E9AF1;
+    color: white;
+}
+
+.memory-start-button:hover {
+    /* opacity: 1 */
+    background-color: lightgray;
+    color: #5E9AF1;
+    cursor: pointer;
+}
+
+.memory-description p {
+    font-weight: bold;
+}
+
+.leaderboard-contents-memory {
+    border: 2px solid black;
+    display: inline-block;
+    justify-content: center;
+    padding: 16px;
+    margin: 16px;
+}
+
+.activity-history-contents {
+    border: 2px solid black;
+    display: inline-block;
+    justify-content: center;
+    padding: 16px;
+    margin: 16px;
+}
+
+.leaderboard-container {
+    padding-top: 16px;
+    justify-content: center;
+    text-align: center;
+}
+
+h2 {
+    margin: 0px;
+    text-decoration: underline;
+}
+
+.background-info {
+    border: 2px solid black;
+}
+
+/*************************
+    404.html CSS
+*************************/
+
+.error-container {
+    font-family: 'Open Sans', sans-serif;
+    text-align: center;
+  }
+  
+  .error-container h2 {
+    font-size: 128px;
+    text-decoration: none;
+    margin-top: 50px;
+    margin-bottom: 0;
+  }
+  
+  .error-container h3 {
+    font-size: 32px;
+    margin: 0;
+  }
