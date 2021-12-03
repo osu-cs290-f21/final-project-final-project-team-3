@@ -398,3 +398,125 @@ h2 {
     font-size: 32px;
     margin: 0;
   }
+
+  /*
+    modal stuff
+  */
+  .hidden {
+      display: none;
+  }
+
+  #modal-backdrop {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    background-color: rgba(0, 0, 0, 0.85);
+  }
+
+  #modal-username-input {
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 10px;
+    width: 500px;
+    height: 350px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  .modal-header {
+    position: relative;
+    padding: 30px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .modal-header h3 {
+    margin: 0;
+    font-size: 20px;
+    padding: 20px;
+    color: #5E9AF1;
+  }
+
+  .modal-body {
+    position: relative;
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .modal-footer {
+    position: relative;
+    padding: 35px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  #modal-close {
+      background-color: lightgray;
+      color: #fff;
+      border-radius: 5px;
+      border: none;
+      width: 30px;
+      height: 30px;
+      font-size: 30px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+  }
+
+  #modal-close:hover {
+      cursor: pointer;
+  }
+
+  #username-label {
+    color: #5E9AF1;
+    font-size: 20px;
+  }
+
+  .username-input {
+    border: .5px solid lightgray;
+    border-radius: 5px;
+    padding: 10px;
+    margin-left: 10px;
+    width: 250px;
+  }
+
+  #modal-cancel {
+    background-color: lightgray;
+    color: #fff;
+    border-radius: 5px;
+    border: none;
+    font-size: 18px;
+    width: 120px;
+    height: auto;
+    padding: 15px 5px;
+    margin: 20px 20px 0px 0px;
+  }
+
+  #modal-cancel:hover {
+    cursor: pointer;
+}
+
+  #modal-submit {
+    background-color: #FEC675;
+    color: #fff;
+    border-radius: 5px;
+    border: none;
+    font-size: 18px;
+    width: 120px;
+    height: auto;
+    padding: 15px 5px;
+    margin: 20px 0px 0px 20px;
+  }
+
+  #modal-submit:hover {
+    cursor: pointer;
+}
