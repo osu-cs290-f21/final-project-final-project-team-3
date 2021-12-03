@@ -9,22 +9,34 @@
         <button id="reaction-start-button"> Start </button>
     </div>
 
-    <div class = username-and-time-box>
+    <div class = "username-and-time-box">
         <div class = "time-box">
         <h3 class = "time"> Time: </h3>
         <h3 id = "time-output"></h3>
-        </div>
+    </div>
 
-        {{!-- <div class = "username-container">
-            <label for = "username" class="user-input-label">Username</label>
-        <div class= "username-input-element">
-            <input type="text" name = "username-input" id="username-text">
-        </div>
+    <div id="modal-backdrop" class="hidden">
+        <div id="modal-username-input" class="hidden">
+            <div class="modal-dialog">
+                <div class="modal-header">
+                    <button type="button" id="modal-close" class="modal-hide-button">&times</button>
+                    <h3>Save your score by signing your name!</h3>
+                </div>
 
-        <div id = "username-button">
-            <button id = "submit-username-button"> Submit </button>
-        </div> --}}
-        </div>
+                <div class="modal-body">
+                    <div class="username-input-element">
+                        <label for="username-input" id="username-label">Username:</label>
+                        <input type="text" name="username-input-element" id="username-input-element" class="username-input" placeholder= "Enter your name here">
+                    </div>
+                </div>
+
+                <div class="modal-footer">
+                    <button type="button" id="modal-cancel" class="modal-hide-button action-button">Cancel</button>
+                    <button type="button" id="modal-submit" class="submit-button">Submit</button>
+                </div>
+            </div>
+        </div>  
+    </div>
 
     <div class = "standings-contents">
         <div class = "leaderboard-contents">
