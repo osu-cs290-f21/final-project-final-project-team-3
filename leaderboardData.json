@@ -23,72 +23,34 @@
             }
         ],
         "personalLog": [
-            {
-                "name": "",
-                "score": 0
-            },
-            {
-                "name": "",
-                "score": 0
-            },
-            {
-                "name": "",
-                "score": 0
-            },
-            {
-                "name": "",
-                "score": 0
-            },
-            {
-                "name": "",
-                "score": 0
-            }
+
         ]
     },
     "reaction": {
         "globalLeaderboard": [
             {
                 "name": "Antonia",
-                "score": "387 ms"
+                "score": "150 ms"
             },
             {
                 "name": "Lauren",
-                "score": "470 ms"
+                "score": "153 ms"
             },
             {
                 "name": "Isaiah",
-                "score": "535 ms"
+                "score": "160 ms"
             },
             {
                 "name": "Steven",
-                "score": "542 ms"
+                "score": "161 ms"
             },
             {
                 "name": "Bob",
-                "score": "559 ms"
+                "score": "170 ms"
             }
         ],
         "personalLog": [
-            {
-                "name": "",
-                "score": "0 ms"
-            },
-            {
-                "name": "",
-                "score": "0 ms"
-            },
-            {
-                "name": "",
-                "score": "0 ms"
-            },
-            {
-                "name": "",
-                "score": "0 ms"
-            },
-            {
-                "name": "",
-                "score": "0 ms"
-            }
+            
         ]
     }
 }
