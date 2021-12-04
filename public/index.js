@@ -10,9 +10,11 @@ var modal = document.getElementById('modal-username-input')
 var sTime = 0;
 var eTime = 0;
 var time = 0;
+var logArray = []
 
 if(window.location.href === '/reaction') {
   reactionButton.addEventListener('click', function() {
+    console.log("reaction button event listener")
     runtest()
   });
   
@@ -73,19 +75,33 @@ if(window.location.href === '/reaction') {
       name: username,
       score: time
     }
-  
-    var node = Handlebars.templates.leaderboardItem(context)
-    var log = document.getElementById('log-list')
-    log.insertAdjacentHTML('beforeend', node)
-  
-    // var logTimes = document.getElementsByTagName('li')
-    // var betterTime = false
-    // for (var i = 0; i < logTimes.length; i++) {
-    //   if (time < logTimes[i]) {
-    //     log.insertAdjacentHTML('beforeend', node)
-    //   }
-    // }
-  
+
+    // console.log("logArray unsorted:", logArray)
+    logArray.push(context)
+    logArray.sort(function(a, b) {
+      return a.score - b.score
+    })
+    // console.log("logArray sorted:", logArray)
+
+    if (loglist) {
+      console.log("deleting list items")
+      // while (loglist.firstChild) {
+      //   loglist.removeChild(loglist[i])
+      // }
+      // loglist.value = ""
+      // var list = document.querySelectorAll("ol > li")
+      // console.log("list:", list)
+      // for (var i = 0; i < list.length; i++){
+      //   list[i].remove()
+      //   i--
+      // }
+    }
+
+    for (var i = 0; i < logArray.length; i++) {
+      console.log("placing list items")
+      var node = Handlebars.templates.leaderboardItem(logArray[i])
+      loglist.insertAdjacentHTML('beforeend', node)
+    }
   }
 }
 
