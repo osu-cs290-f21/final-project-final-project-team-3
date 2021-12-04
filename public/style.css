@@ -235,19 +235,36 @@ body {
 }
 
 #hidden {
-  display: none;
-  position: fixed;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  z-index: 1000;
-  background-color: #bf0000;
+    display: none;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    background-color: #bf0000;
 }
 
 /*************************
     memory.html CSS
 *************************/
+#hiddenBlack {
+    display: none;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    background-color: black;
+}
+
+#wordDisplay {
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
 img {
     display: block;
 }

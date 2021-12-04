@@ -6,18 +6,14 @@ var words = [ "lake", "appointment", "sense", "leash", "silk", "assume", "worth"
   "wonder", "lip", "tabloid"
 ];
 
-
 var chosenwords = [];
 
 var wordsnumber = [];
-
-
 
 if(window.location.href === 'http://localhost:3000/memory') {
   memoryButton.addEventListener('click', function () {
     test_setup()
   });
-
 
   function test_setup(){
     for(i=0; i<10; i++)
