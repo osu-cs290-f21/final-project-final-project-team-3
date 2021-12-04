@@ -11,7 +11,7 @@ var sTime = 0;
 var eTime = 0;
 var time = 0;
 
-if(window.location.href === '/reaction') {
+if(window.location.href === 'http://localhost:3000/reaction') {
   reactionButton.addEventListener('click', function() {
     runtest()
   });
