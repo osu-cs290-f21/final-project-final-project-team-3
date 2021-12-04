@@ -21,6 +21,7 @@ if(window.location.href === 'http://localhost:3000/reaction') {
   {
     modalBackdrop.style.display = 'none'
     modal.style.display = 'none'
+    document.getElementById('username-input-element').value = ""
   }
 
   var modalCancel = document.getElementById('modal-cancel')
@@ -75,6 +76,7 @@ if(window.location.href === 'http://localhost:3000/reaction') {
     }
     else {
       // close modal
+      document.getElementById('username-input-element').value = ""
       modalBackdrop.style.display = 'none'
       modal.style.display = 'none'
 
