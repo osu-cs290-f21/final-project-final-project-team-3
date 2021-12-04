@@ -336,7 +336,7 @@ a:hover {
     color: white;
 }
 
-.memory-start-button:hover {
+#memory-start-button:hover {
     /* opacity: 1 */
     background-color: lightgray;
     color: #5E9AF1;

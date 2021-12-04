@@ -6,12 +6,61 @@ var words = [ "lake", "appointment", "sense", "leash", "silk", "assume", "worth"
   "wonder", "lip", "tabloid"
 ];
 
+var chosenwords = [];
+
+var wordsnumber = [];
+
 console.log(memoryButton)
 
 
 if(window.location.href === 'http://localhost:3000/memory') {
   memoryButton.addEventListener('click', function () {
-    console.log("stuff")
+    console.log("Check")
+    test_setup()
   });
+
+
+  function test_setup(){
+    for(i=0; i<10; i++)
+    {
+      var random = -1
+
+      while (wordsnumber.indexOf(random) !== -1)
+      {
+        random = Math.floor(Math.random() * 30)
+      }
+
+
+
+    }
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 }
