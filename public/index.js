@@ -12,12 +12,10 @@ var eTime = 0;
 var time = 0;
 
 reactionButton.addEventListener('click', function() {
-  console.log("event listener")
   runtest()
 });
 
 function runtest(){
-  console.log("running test")
   hidden.style.display = 'block'
   const random = Math.floor(Math.random() * 5000);
   setTimeout(changeToGreen, random)
@@ -39,7 +37,6 @@ green.addEventListener('click', function() {
   eTime = endtime
   timeOutput.textContent = eTime - sTime + " ms";
   green.style.display = 'none'
-  // updatelog(eTime-sTime)
   time = eTime-sTime
 
   // open modal to get username
@@ -80,21 +77,12 @@ function updatelog(username)
   var log = document.getElementById('log-list')
   log.insertAdjacentHTML('beforeend', node)
 
-  /*
-    var context = {
-        description: description,
-        photoURL: photoURL,
-        price: price,
-        city: city,
-        condition: condition
-      }
+  // var logTimes = document.getElementsByTagName('li')
+  // var betterTime = false
+  // for (var i = 0; i < logTimes.length; i++) {
+  //   if (time < logTimes[i]) {
+  //     log.insertAdjacentHTML('beforeend', node)
+  //   }
+  // }
 
-    var newPost = Handlebars.templates.post(context)
-    var postsSection = document.getElementById('posts')
-    postsSection.insertAdjacentHTML('beforeend', newPost)
-  */
-
-  // var node = document.createElement('li')
-  // node.appendChild(document.createTextNode("   " + time + '  ms'))
-  // loglist.appendChild(node);
 }
