@@ -1,4 +1,4 @@
-var memoryButton = document.getElementsByClassName('memory-start-button')
+var memoryButton = document.getElementById('memory-start-button')
 
 var words = [ "lake", "appointment", "sense", "leash", "silk", "assume", "worth", "consensus",
   "incapable", "engine", "stumble", "blast", "combination", "drink", "guide", "craft", "separation",
@@ -6,8 +6,12 @@ var words = [ "lake", "appointment", "sense", "leash", "silk", "assume", "worth"
   "wonder", "lip", "tabloid"
 ];
 
+console.log(memoryButton)
 
 
-// memoryButton.addEventListener('click', function () {
-//   console.log("stuff")
-// });
+if(window.location.href === 'http://localhost:3000/memory') {
+  memoryButton.addEventListener('click', function () {
+    console.log("stuff")
+  });
+
+}

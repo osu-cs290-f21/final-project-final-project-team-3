@@ -312,7 +312,7 @@ a:hover {
     color: #FEC675;
 }
 
-.memory-start-button {
+#memory-start-button {
     /* background-color: rgb(255, 209, 84);
     border: none;
     color: black;
@@ -386,14 +386,14 @@ h2 {
     font-family: 'Open Sans', sans-serif;
     text-align: center;
   }
-  
+
   .error-container h2 {
     font-size: 128px;
     text-decoration: none;
     margin-top: 50px;
     margin-bottom: 0;
   }
-  
+
   .error-container h3 {
     font-size: 32px;
     margin: 0;
@@ -435,7 +435,7 @@ h2 {
     align-items: center;
     justify-content: center;
   }
-  
+
   .modal-header h3 {
     margin: 0;
     font-size: 20px;
