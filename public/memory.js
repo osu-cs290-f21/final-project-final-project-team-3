@@ -11,12 +11,10 @@ var chosenwords = [];
 
 var wordsnumber = [];
 
-console.log(memoryButton)
 
 
 if(window.location.href === 'http://localhost:3000/memory') {
   memoryButton.addEventListener('click', function () {
-    console.log("Check")
     test_setup()
   });
 
@@ -35,11 +33,6 @@ if(window.location.href === 'http://localhost:3000/memory') {
       console.log(words[random])
       chosenwords.push(words[random]);
     }
-
-
-    
-
-
 }
 
 
