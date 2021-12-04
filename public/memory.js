@@ -6,6 +6,7 @@ var words = [ "lake", "appointment", "sense", "leash", "silk", "assume", "worth"
   "wonder", "lip", "tabloid"
 ];
 
+
 var chosenwords = [];
 
 var wordsnumber = [];
@@ -25,14 +26,18 @@ if(window.location.href === 'http://localhost:3000/memory') {
     {
       var random = -1
 
-      while (wordsnumber.indexOf(random) !== -1)
+      while (random === -1 || wordsnumber.indexOf(random) !== -1)
       {
         random = Math.floor(Math.random() * 30)
       }
 
-
-
+      wordsnumber.push(random);
+      console.log(words[random])
+      chosenwords.push(words[random]);
     }
+
+
+    
 
 
 }
