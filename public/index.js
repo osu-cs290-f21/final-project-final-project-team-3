@@ -103,21 +103,14 @@ if(window.location.href === 'http://localhost:3000/reaction') {
     // console.log("logArray sorted:", logArray)
 
     if (loglist) {
-      console.log("deleting list items")
-      // while (loglist.firstChild) {
-      //   loglist.removeChild(loglist[i])
-      // }
-      // loglist.value = ""
-      // var list = document.querySelectorAll("ol > li")
-      // console.log("list:", list)
-      // for (var i = 0; i < list.length; i++){
-      //   list[i].remove()
-      //   i--
-      // }
+      var lis = document.querySelectorAll('#log-list li');
+      for (var i = 0; i < lis.length; i++) {
+          li = lis[i]
+          li.parentNode.removeChild(li);
+      }
     }
 
     for (var i = 0; i < logArray.length; i++) {
-      console.log("placing list items")
       var node = Handlebars.templates.leaderboardItem(logArray[i])
       loglist.insertAdjacentHTML('beforeend', node)
     }
