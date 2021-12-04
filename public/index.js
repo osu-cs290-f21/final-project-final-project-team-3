@@ -17,6 +17,24 @@ if(window.location.href === 'http://localhost:3000/reaction') {
     runtest()
   });
 
+  function closeModal()
+  {
+    modalBackdrop.style.display = 'none'
+    modal.style.display = 'none'
+  }
+
+  var modalCancel = document.getElementById('modal-cancel')
+  modalCancel.addEventListener('click', function(){
+    console.log("cancel button event listener")
+    closeModal()
+  })
+
+  var modalClose = document.getElementById('modal-close')
+  modalClose.addEventListener('click', function(){
+    console.log("close button event listener")
+    closeModal()
+  })
+
   function runtest(){
     hidden.style.display = 'block'
     const random = Math.floor(Math.random() * 5000);
