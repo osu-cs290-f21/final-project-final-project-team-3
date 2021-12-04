@@ -1,3 +1,4 @@
+
 var memoryButton = document.getElementsByClassName('memory-start-button')
 
 var words = { lake, appointment, sense, leash, silk, assume, worth, consensus,
