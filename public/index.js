@@ -7,6 +7,7 @@ var loglist = document.getElementById('log-list')
 var modalBackdrop = document.getElementById('modal-backdrop')
 var modal = document.getElementById('modal-username-input')
 
+var flag = 0;
 var sTime = 0;
 var eTime = 0;
 var time = 0;
@@ -43,13 +44,25 @@ if(window.location.href === 'http://localhost:3000/reaction') {
   }
 
   function changeToGreen(){
+      if (flag === 0)
+      {
+        hidden.style.display = 'none'
+        green.style.display = 'block'
+        const starttime = new Date()
+        starttime.getTime()
+        sTime = starttime
+      }
 
-      hidden.style.display = 'none'
-      green.style.display = 'block'
-      const starttime = new Date()
-      starttime.getTime()
-      sTime = starttime
+      flag = 0;
   }
+
+
+  hidden.addEventListener('click' , function() {
+      alert("Do not click until the screen turns green!")
+      hidden.style.display = 'none'
+      flag = 1;
+
+  });
 
   green.addEventListener('click', function() {
 
