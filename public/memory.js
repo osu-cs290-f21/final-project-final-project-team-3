@@ -35,6 +35,11 @@ newButton.addEventListener('click', function () {
   if (chosenwords.indexOf(wordEvent.textContent) !== -1)
   {
     console.log("Incorrect!")
+    // highlighting incorrect animation, DOCUMENTATION: https://css-tricks.com/restart-css-animation/
+    this.classList.remove("animationIncorrect");
+    void this.offsetWidth;
+    this.classList.add("animationIncorrect");
+
     //show incorrect modal
     mistakes++;
 
@@ -59,6 +64,10 @@ newButton.addEventListener('click', function () {
   else
   {
     console.log("Correct!")
+    // highlighting correct animation, DOCUMENTATION: https://css-tricks.com/restart-css-animation/
+    this.classList.remove("animationCorrect");
+    void this.offsetWidth;
+    this.classList.add("animationCorrect");
     correct++
 
     if (currentWord === 29)
@@ -80,6 +89,11 @@ seenButton.addEventListener('click', function () {
   if (chosenwords.indexOf(wordEvent.textContent) === -1)
   {
     console.log("Incorrect!")
+    // highlighting incorrect animation, DOCUMENTATION: https://css-tricks.com/restart-css-animation/
+    this.classList.remove("animationIncorrect");
+    void this.offsetWidth;
+    this.classList.add("animationIncorrect");
+
     //show incorrect modal
     mistakes++;
 
@@ -104,6 +118,12 @@ seenButton.addEventListener('click', function () {
   else
   {
     console.log("Correct!")
+
+    // highlighting correct animation, DOCUMENTATION: https://css-tricks.com/restart-css-animation/
+    this.classList.remove("animationCorrect");
+    void this.offsetWidth;
+    this.classList.add("animationCorrect");
+
     correct++
 
     if (currentWord === 29)
