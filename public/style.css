@@ -273,6 +273,7 @@ body {
 }
 
 #seenUnseenModal {
+    display: none;
     margin-top: 40%;
     text-align: center;
     color: white;
