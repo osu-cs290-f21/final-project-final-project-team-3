@@ -43,18 +43,9 @@ newButton.addEventListener('click', function () {
 
     mistakes++;
 
-    if (mistakes === 3)
+    if (mistakes === 3 || currentWord === 29)
     {
-      secondModal.style.display = 'none'
-      notHidden.style.display = 'block'
-    }
-
-    else if (currentWord === 29)
-    {
-      //Start test over again
-      secondModal.style.display = 'none'
-      notHidden.style.display = 'block'
-
+      exitTest()
     }
 
     else
@@ -86,9 +77,7 @@ newButton.addEventListener('click', function () {
 
     if (currentWord === 29)
     {
-      //Start test over again
-      secondModal.style.display = 'none'
-      notHidden.style.display = 'block'
+      exitTest()
     }
 
     else
@@ -109,20 +98,11 @@ seenButton.addEventListener('click', function () {
     void this.offsetWidth;
     this.classList.add("animationIncorrect");
 
-    //show incorrect modal
     mistakes++;
 
-    if (mistakes === 3)
+    if (mistakes === 3 || currentWord === 29)
     {
-      secondModal.style.display = 'none'
-      notHidden.style.display = 'block'
-    }
-
-    else if (currentWord === 29)
-    {
-      //Start test over again
-      secondModal.style.display = 'none'
-      notHidden.style.display = 'block'
+      exitTest()
     }
 
     else
@@ -151,12 +131,11 @@ seenButton.addEventListener('click', function () {
     void this.offsetWidth;
     this.classList.add("animationCorrect");
 
-    correct++
+    correct++;
 
     if (currentWord === 29)
     {
-      //Start test over again
-      secondModal.style.display = 'none'
+      exitTest()
     }
 
     else
@@ -168,6 +147,15 @@ seenButton.addEventListener('click', function () {
 
 
 
+function exitTest()
+{
+  secondModal.style.display = 'none'
+  notHidden.style.display = 'block'
+  chosenwords = []
+  wordsnumber = []
+  mistakes = 0
+
+}
 
 
 
@@ -196,6 +184,11 @@ async function displayWordsCycle() {
 
 
   function test_setup(){
+
+    correct = 0
+    lives.textContent = "3"
+
+
     for(i=0; i<10; i++)
     {
       var random = -1
@@ -211,9 +204,6 @@ async function displayWordsCycle() {
 }
 
 
-
-
-console.log("Number guessed correctly: ", correct)
 
 
 
