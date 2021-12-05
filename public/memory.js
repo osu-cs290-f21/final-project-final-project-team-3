@@ -114,7 +114,7 @@ seenButton.addEventListener('click', function () {
 
     else
     {
-      wordEvent.textContent = words[currentWord++]
+      wordEvent.textContent = words[++currentWord]
     }
   }
 });
