@@ -39,7 +39,8 @@ newButton.addEventListener('click', function () {
     console.log("Incorrect!")
     // highlighting incorrect animation, DOCUMENTATION: https://css-tricks.com/restart-css-animation/
     this.classList.remove("animationIncorrect");
-    void this.offsetWidth;
+    this.classList.remove("animationCorrect");
+    void this.offsetHeight;
     this.classList.add("animationIncorrect");
 
     mistakes++;
@@ -72,7 +73,8 @@ newButton.addEventListener('click', function () {
     console.log("Correct!")
     // highlighting correct animation, DOCUMENTATION: https://css-tricks.com/restart-css-animation/
     this.classList.remove("animationCorrect");
-    void this.offsetWidth;
+    this.classList.remove("animationIncorrect");
+    void this.offsetHeight;
     this.classList.add("animationCorrect");
     correct++
 
@@ -96,7 +98,8 @@ seenButton.addEventListener('click', function () {
     console.log("Incorrect!")
     // highlighting incorrect animation, DOCUMENTATION: https://css-tricks.com/restart-css-animation/
     this.classList.remove("animationIncorrect");
-    void this.offsetWidth;
+    this.classList.remove("animationCorrect");
+    void this.offsetHeight;
     this.classList.add("animationIncorrect");
 
     mistakes++;
@@ -129,7 +132,8 @@ seenButton.addEventListener('click', function () {
 
     // highlighting correct animation, DOCUMENTATION: https://css-tricks.com/restart-css-animation/
     this.classList.remove("animationCorrect");
-    void this.offsetWidth;
+    this.classList.remove("animationIncorrect");
+    void this.offsetHeight;
     this.classList.add("animationCorrect");
 
     correct++;
