@@ -264,7 +264,8 @@ body {
 }
 
 #wordDisplay {
-    top: 50%;
+    top: 40%;
+    font-size: 40px;
     position: relative;
     justify-content: center;
     align-items: center;
@@ -272,10 +273,11 @@ body {
 }
 
 #seenUnseenModal {
-    display: none;
-    justify-content: center;
-    align-items: center;
+    margin-top: 40%;
+    text-align: center;
     color: white;
+    position: relative;
+    z-index: 1001;
 }
 
 #modal-seen {
@@ -302,6 +304,7 @@ body {
     border: 0px;
     background-color: #5E9AF1;
     color: white;
+    position: relative;
 }
 
 img {
