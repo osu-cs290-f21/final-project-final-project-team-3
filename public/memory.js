@@ -6,6 +6,7 @@ var secondModal = document.getElementById('seenUnseenModal')
 var wordEvent = document.getElementById('wordEvent')
 var seenButton = document.getElementById('modal-seen')
 var newButton = document.getElementById('modal-new')
+var lives = document.getElementById('lives')
 
 var words = [ "lake", "appointment", "sense", "leash", "silk", "assume", "worth", "consensus",
   "incapable", "engine", "stumble", "blast", "combination", "drink", "guide", "craft", "separation",
@@ -40,23 +41,36 @@ newButton.addEventListener('click', function () {
     void this.offsetWidth;
     this.classList.add("animationIncorrect");
 
-    //show incorrect modal
     mistakes++;
 
     if (mistakes === 3)
     {
       secondModal.style.display = 'none'
+      notHidden.style.display = 'block'
     }
 
-    else if (currentWord === 30)
+    else if (currentWord === 29)
     {
       //Start test over again
       secondModal.style.display = 'none'
+      notHidden.style.display = 'block'
+
     }
 
     else
     {
+      if (mistakes === 1)
+      {
+        lives.textContent = "2"
+      }
+
+      else if (mistakes === 2)
+      {
+        lives.textContent = "1"
+      }
+
       wordEvent.textContent = words[++currentWord]
+
     }
 
   }
@@ -74,6 +88,7 @@ newButton.addEventListener('click', function () {
     {
       //Start test over again
       secondModal.style.display = 'none'
+      notHidden.style.display = 'block'
     }
 
     else
@@ -100,12 +115,14 @@ seenButton.addEventListener('click', function () {
     if (mistakes === 3)
     {
       secondModal.style.display = 'none'
+      notHidden.style.display = 'block'
     }
 
     else if (currentWord === 29)
     {
       //Start test over again
       secondModal.style.display = 'none'
+      notHidden.style.display = 'block'
     }
 
     else
