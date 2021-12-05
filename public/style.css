@@ -572,6 +572,7 @@ h2 {
       width: 30px;
       height: 30px;
       font-size: 30px;
+      padding-bottom: 5px;
       display: flex;
       justify-content: center;
       align-items: center;
