@@ -264,7 +264,7 @@ body {
 }
 
 #wordDisplay {
-    top: 40%;
+    top: 20%;
     font-size: 40px;
     position: relative;
     justify-content: center;
@@ -274,38 +274,73 @@ body {
 
 #seenUnseenModal {
     display: none;
-    margin-top: 40%;
+    margin-top: 10%;
     text-align: center;
-    color: white;
+    align-items: center;
+    color: black;
     position: relative;
-    z-index: 1001;
+}
+
+#wordEvent {
+    font-size: 80px;
+    font-weight: bold;
+    padding-bottom: 112px;
 }
 
 #modal-seen {
-    height: 100px;
-    width: 400px;
+    height: 80px;
+    width: 320px;
     margin: 60px;
     margin-top: 0px;
-    font-size: 70px;
-    font-weight: bold;
+    font-size: 56px;
     border-radius: 30px;
     border: 0px;
     background-color: #5E9AF1;
     color: white;
+    opacity: 0.8;
+    position: relative;
+}
+
+#modal-seen:hover {
+    opacity: 1;
+    box-shadow: 0 2px 2px 0 rgba(0,0,0,0.24),0 8px 5px 0 rgba(0,0,0,0.19);
 }
 
 #modal-new {
-    height: 100px;
-    width: 400px;
+    height: 80px;
+    width: 320px;
     margin: 60px;
     margin-top: 0px;
-    font-size: 70px;
-    font-weight: bold;
+    font-size: 56px;
     border-radius: 30px;
     border: 0px;
     background-color: #5E9AF1;
     color: white;
+    opacity: 0.8;
     position: relative;
+}
+
+#modal-new:hover {
+    opacity: 1;
+    box-shadow: 0 2px 2px 0 rgba(0,0,0,0.24),0 8px 5px 0 rgba(0,0,0,0.19);
+}
+
+@keyframes correct {
+    0%   {background-color: #5E9AF1;}
+    25%  {background-color:green;}
+    50% {background-color:green;}
+    75% {background-color:green;}
+}
+
+@keyframes incorrect {
+    0%   {background-color: #5E9AF1;}
+    25%  {background-color:red;}
+    50% {background-color:red;}
+    75% {background-color:red;}
+}
+
+#seenUnseenModal h2 {
+    text-decoration: none;
 }
 
 img {
