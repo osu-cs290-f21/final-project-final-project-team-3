@@ -261,9 +261,13 @@ body {
     background-color: black;
     justify-content: center;
     align-items: center;
+    vertical-align: middle;
+    
 }
 
 #wordDisplay {
+    top: 50%;
+    position: relative;
     justify-content: center;
     align-items: center;
     color: white;
