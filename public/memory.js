@@ -1,4 +1,7 @@
 var memoryButton = document.getElementById('memory-start-button')
+var blackScreen = document.getElementById('hiddenBlack')
+var wordToRemember = document.getElementById('wordDisplay')
+var notHidden = document.getElementById('nothidden')
 
 var words = [ "lake", "appointment", "sense", "leash", "silk", "assume", "worth", "consensus",
   "incapable", "engine", "stumble", "blast", "combination", "drink", "guide", "craft", "separation",
@@ -13,6 +16,10 @@ var wordsnumber = [];
 if(window.location.href === 'http://localhost:3000/memory') {
   memoryButton.addEventListener('click', function () {
     test_setup()
+    blackScreen.style.display = 'block'
+    notHidden.style.display = 'none'
+    wordToRemember.textContent = "Alligator"
+
   });
 
   function test_setup(){
@@ -30,7 +37,6 @@ if(window.location.href === 'http://localhost:3000/memory') {
       chosenwords.push(words[random]);
     }
 }
-
 
 
 
