@@ -31,6 +31,7 @@ memoryButton.addEventListener('click', function () {
     console.log(chosenwords)
   });
 
+
 newButton.addEventListener('click', function () {
   console.log("currentWord =", currentWord)
   if (chosenwords.indexOf(wordEvent.textContent) !== -1)
