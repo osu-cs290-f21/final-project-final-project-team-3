@@ -27,12 +27,14 @@ memoryButton.addEventListener('click', function () {
     blackScreen.style.display = 'block'
     notHidden.style.display = 'none'
     displayWordsCycle()
+    console.log(chosenwords)
   });
 
 newButton.addEventListener('click', function () {
   console.log("currentWord =", currentWord)
   if (chosenwords.indexOf(wordEvent.textContent) !== -1)
   {
+    console.log("Incorrect!")
     //show incorrect modal
     mistakes++;
 
@@ -56,6 +58,7 @@ newButton.addEventListener('click', function () {
 
   else
   {
+    console.log("Correct!")
     correct++
 
     if (currentWord === 29)
@@ -66,11 +69,59 @@ newButton.addEventListener('click', function () {
 
     else
     {
-      console.log("Correct: ", correct)
+      wordEvent.textContent = words[++currentWord]
+    }
+  }
+});
+
+
+seenButton.addEventListener('click', function () {
+  console.log("currentWord =", currentWord)
+  if (chosenwords.indexOf(wordEvent.textContent) === -1)
+  {
+    console.log("Incorrect!")
+    //show incorrect modal
+    mistakes++;
+
+    if (mistakes === 3)
+    {
+      secondModal.style.display = 'none'
+    }
+
+    else if (currentWord === 29)
+    {
+      //Start test over again
+      secondModal.style.display = 'none'
+    }
+
+    else
+    {
+      wordEvent.textContent = words[++currentWord]
+    }
+
+  }
+
+  else
+  {
+    console.log("Correct!")
+    correct++
+
+    if (currentWord === 29)
+    {
+      //Start test over again
+      secondModal.style.display = 'none'
+    }
+
+    else
+    {
       wordEvent.textContent = words[currentWord++]
     }
   }
 });
+
+
+
+
 
 
 
