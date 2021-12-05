@@ -249,6 +249,8 @@ body {
     memory.html CSS
 *************************/
 #hiddenBlack {
+    margin-top: 130px;
+    text-align: center;
     display: none;
     position: fixed;
     top: 0;
@@ -257,11 +259,45 @@ body {
     right: 0;
     z-index: 1000;
     background-color: black;
+    justify-content: center;
+    align-items: center;
 }
 
 #wordDisplay {
     justify-content: center;
     align-items: center;
+    color: white;
+}
+
+#seenUnseenModal {
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+#modal-seen {
+    height: 100px;
+    width: 400px;
+    margin: 60px;
+    margin-top: 0px;
+    font-size: 70px;
+    font-weight: bold;
+    border-radius: 30px;
+    border: 0px;
+    background-color: #5E9AF1;
+    color: white;
+}
+
+#modal-new {
+    height: 100px;
+    width: 400px;
+    margin: 60px;
+    margin-top: 0px;
+    font-size: 70px;
+    font-weight: bold;
+    border-radius: 30px;
+    border: 0px;
+    background-color: #5E9AF1;
     color: white;
 }
 
