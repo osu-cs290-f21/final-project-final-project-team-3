@@ -127,6 +127,16 @@ seenButton.addEventListener('click', function () {
 
     else
     {
+      if (mistakes === 1)
+      {
+        lives.textContent = "2"
+      }
+
+      else if (mistakes === 2)
+      {
+        lives.textContent = "1"
+      }
+
       wordEvent.textContent = words[++currentWord]
     }
 
@@ -203,7 +213,7 @@ async function displayWordsCycle() {
 
 
 
-
+console.log("Number guessed correctly: ", correct)
 
 
 
