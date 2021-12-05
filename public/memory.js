@@ -18,9 +18,29 @@ if(window.location.href === 'http://localhost:3000/memory') {
     test_setup()
     blackScreen.style.display = 'block'
     notHidden.style.display = 'none'
-    wordToRemember.textContent = "Alligator"
+    displayWordsCycle()
+
 
   });
+
+//Sleep Function Adapted from https://www.sitepoint.com/delay-sleep-pause-wait/
+function sleep(ms)
+{
+  return new Promise(resolve => setTimeout(resolve, ms));
+}
+
+
+
+async function displayWordsCycle() {
+  for(z=0; z<10; z++)
+  {
+    // console.log(chosenwords[i])
+    console.log(z)
+    wordToRemember.textContent = chosenwords[z]
+    await sleep(1000)
+  }
+}
+
 
   function test_setup(){
     for(i=0; i<10; i++)
@@ -33,7 +53,6 @@ if(window.location.href === 'http://localhost:3000/memory') {
       }
 
       wordsnumber.push(random);
-      console.log(words[random])
       chosenwords.push(words[random]);
     }
 }
