@@ -273,7 +273,8 @@ body {
 }
 
 #seenUnseenModal {
-    margin-top: 30%;
+    display: none;
+    margin-top: 20%;
     text-align: center;
     color: white;
     position: relative;
