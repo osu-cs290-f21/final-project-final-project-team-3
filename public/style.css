@@ -325,6 +325,16 @@ body {
     box-shadow: 0 2px 2px 0 rgba(0,0,0,0.24),0 8px 5px 0 rgba(0,0,0,0.19);
 }
 
+.animationCorrect {
+    animation: correct;
+    animation-duration: 1s;
+}
+
+.animationIncorrect {
+    animation: incorrect;
+    animation-duration: 1s;
+}
+
 @keyframes correct {
     0%   {background-color: #5E9AF1;}
     25%  {background-color:green;}
