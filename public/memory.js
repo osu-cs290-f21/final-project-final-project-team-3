@@ -8,7 +8,9 @@ var seenButton = document.getElementById('modal-seen')
 var newButton = document.getElementById('modal-new')
 var lives = document.getElementById('lives')
 var loglist = document.getElementById('log-list')
-console.log("loglist:", loglist)
+var leaderboard = document.getElementById('board-list')
+
+// var leaderboardData = require('./leaderboardData.json')
 
 
 var words = [ "lake", "appointment", "sense", "leash", "silk", "assume", "worth", "consensus",
@@ -205,6 +207,7 @@ submit.addEventListener('click', function() {
     // reset input
     username.value = ""
     updatelog(username)
+    updateLeaderboard(username)
   }
 
 })
@@ -221,7 +224,7 @@ function updatelog(username) {
   logArray.sort(function(a, b) {
     return b.score - a.score
   })
-  console.log("logArray sorted:", logArray)
+  // console.log("logArray sorted:", logArray)
 
   if (loglist) {
     var lis = document.querySelectorAll('#log-list li');
@@ -238,7 +241,41 @@ function updatelog(username) {
 
 }
 
+function updateLeaderboard(username) {
 
+  // We use an axios request library to make a request to my backend
+  // Source: https://axios-http.com/docs/post_example
+  axios.post('/memory/leaderboard', {
+    name: username,
+    score: correct
+  }).then(function (resp) {
+
+    // Get the response data
+    console.log(resp.data)
+
+    // Delete all the old leaderboard li
+    var lis = document.querySelectorAll('#board-list li');
+      for (var i = 0; i < lis.length; i++) {
+          li = lis[i]
+          li.parentNode.removeChild(li);
+      }
+
+    // Get array from data
+    var newTop5 = resp.data
+      
+    // Loop over all data
+    for (var i = 0; i < newTop5.length; i++){
+      console.log(newTop5[i])
+      var node = Handlebars.templates.leaderboardItem(newTop5[i])
+
+      // Insert the new node
+      leaderboard.insertAdjacentHTML('beforeend', node)
+    }
+  }).catch(function (err) {
+      // If there is an error output error
+      alert("Error saving score: " + username)
+  })
+}
 
 
 //Sleep Function Adapted from https://www.sitepoint.com/delay-sleep-pause-wait/
