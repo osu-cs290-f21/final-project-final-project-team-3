@@ -35,8 +35,26 @@ memoryButton.addEventListener('click', function () {
     console.log(chosenwords)
   });
 
+  function closeModal()
+  {
+    modalBackdrop.style.display = 'none'
+    modal.style.display = 'none'
+    document.getElementById('username-input-element').value = ""
+  }
 
-newButton.addEventListener('click', function () {
+  var modalCancel = document.getElementById('modal-cancel')
+  modalCancel.addEventListener('click', function(){
+    console.log("cancel button event listener")
+    closeModal()
+  })
+
+  var modalClose = document.getElementById('modal-close')
+  modalClose.addEventListener('click', function(){
+    console.log("close button event listener")
+    closeModal()
+  })
+
+  newButton.addEventListener('click', function () {
   console.log("currentWord =", currentWord)
   if (chosenwords.indexOf(wordEvent.textContent) !== -1)
   {
