@@ -3,24 +3,24 @@
     "globalLeaderboard": [
       {
         "name": "Steven",
-        "score": 30
+        "score": 6
       },
       {
         "name": "Isaiah",
-        "score": 29
+        "score": 4
       },
       {
         "name": "Lauren",
-        "score": 29
+        "score": 3
       },
       {
         "name": "Antonia",
-        "score": 28
+        "score": 2
       },
       {
         "name": "Joe",
-        "score": 27
-      }
+        "score": 1
+      },
     ],
     "personalLog": []
   },
@@ -28,23 +28,23 @@
     "globalLeaderboard": [
       {
         "name": "Antonia",
-        "score": 150
+        "score": 367
       },
       {
         "name": "Lauren",
-        "score": 200
+        "score": 432
       },
       {
         "name": "Isaiah",
-        "score": 205
+        "score": 478
       },
       {
         "name": "Steven",
-        "score": 300
+        "score": 603
       },
       {
         "name": "Joe",
-        "score": 400
+        "score": 650
       }
     ],
     "personalLog": []
