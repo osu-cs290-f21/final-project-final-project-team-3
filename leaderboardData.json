@@ -2,24 +2,24 @@
     "memory": {
         "globalLeaderboard": [
             {
-                "name": "",
-                "score": 0
+                "name": "Steven",
+                "score": 28
             },
             {
-                "name": "",
-                "score": 0
+                "name": "Isaiah",
+                "score": 25
             },
             {
-                "name": "",
-                "score": 0
+                "name": "Lauren",
+                "score": 24
             },
             {
-                "name": "",
-                "score": 0
+                "name": "Antonia",
+                "score": 22
             },
             {
-                "name": "",
-                "score": 0
+                "name": "Joe",
+                "score": 21
             }
         ],
         "personalLog": [
@@ -50,7 +50,7 @@
             }
         ],
         "personalLog": [
-            
+
         ]
     }
 }
