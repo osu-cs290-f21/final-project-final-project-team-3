@@ -96,6 +96,7 @@ if(window.location.href === 'http://localhost:3000/reaction') {
       // reset input
       username.value = ""
       updatelog(username)
+      updateLeaderboard(username)
     }
 
   })
@@ -128,4 +129,31 @@ if(window.location.href === 'http://localhost:3000/reaction') {
       loglist.insertAdjacentHTML('beforeend', node)
     }
   }
+
+  
+}
+
+function updateLeaderboard(username) {
+  // add sorting here and only do rest of function if it fits in leaderboard
+
+  var req = new XMLHttpRequest()
+  req.open('POST', '/reaction/leaderboard')
+
+  var context = {
+    name: username,
+    score: time
+  }
+  var reqBody = JSON.stringify(context)
+
+  req.addEventListener('load', function (event) {
+    if (event.target.status === 200) {
+      var node = Handlebars.templates.leaderboardItem(context)
+      loglist.insertAdjacentHTML('beforeend', node)
+    } else {
+      alert("Error saving score: " + event.target.response)
+    }
+  })
+
+  req.setRequestHeader('Content-Type', 'application/json')
+  req.send(reqBody)
 }
