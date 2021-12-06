@@ -78,7 +78,7 @@ app.post('/memory/leaderboard', function(req, res, next) {
             JSON.stringify(leaderboardData, null, 2),
             function (err) {
                 if (!err) {
-                    res.status(200).send(getTop5())
+                    res.status(200).send(getTop5(true))
                 } else {
                     res.status(500).send("Error storing score in DB.")
                 }
