@@ -241,7 +241,6 @@ function updateLeaderboard(username) {
     score: correct
   }).then(function (resp) {
 
-    // Get the response data
 
     // Delete all the old leaderboard li
     var lis = document.querySelectorAll('#board-list li');
