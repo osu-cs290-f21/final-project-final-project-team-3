@@ -137,24 +137,36 @@ if(window.location.href === 'http://localhost:3000/reaction') {
 function updateLeaderboard(username) {
   // add sorting here and only do rest of function if it fits in leaderboard
 
-  var req = new XMLHttpRequest()
-  req.open('POST', '/reaction/leaderboard')
-
-  var context = {
+  // We use an axios request library to make a request to my backend
+  // Source: https://axios-http.com/docs/post_example
+  axios.post('/reaction/leaderboard', {
     name: username,
     score: time
-  }
-  var reqBody = JSON.stringify(context)
+  }).then(function (resp) {
 
-  req.addEventListener('load', function (event) {
-    if (event.target.status === 200) {
-      var node = Handlebars.templates.leaderboardItem(context)
+    // Get the response data
+    console.log(resp.data)
+
+    // Delete all the old leaderboard li
+    var lis = document.querySelectorAll('#board-list li');
+      for (var i = 0; i < lis.length; i++) {
+          li = lis[i]
+          li.parentNode.removeChild(li);
+      }
+
+    // Get array from data
+    var newTop5 = resp.data
+      
+    // Loop over all data
+    for (var i = 0; i < newTop5.length; i++){
+      console.log(newTop5[i])
+      var node = Handlebars.templates.leaderboardItem(newTop5[i])
+
+      // Insert the new node
       leaderboard.insertAdjacentHTML('beforeend', node)
-    } else {
-      alert("Error saving score: " + event.target.response)
     }
+  }).catch(function (err) {
+      // If there is an error output error
+      alert("Error saving score: " + username)
   })
-
-  req.setRequestHeader('Content-Type', 'application/json')
-  req.send(reqBody)
 }
