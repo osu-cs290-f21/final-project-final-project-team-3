@@ -88,14 +88,14 @@ app.post('/memory/leaderboard', function(req, res, next) {
     }
 })
 
-function sortResults(correct, leaderboard, memory) {
+function sortResults(score, leaderboard, memory) {
     if (memory){
     return leaderboard.memory.globalLeaderboard.sort(function(a, b) {
-        return b[correct] - a[correct]
+        return b[score] - a[score]
     })
     } else {
         return leaderboard.reaction.globalLeaderboard.sort(function (a, b) {
-            return a[correct] - b[correct]
+            return a[score] - b[score]
         })
     }
 }
