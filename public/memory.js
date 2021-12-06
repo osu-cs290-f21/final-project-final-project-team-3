@@ -7,6 +7,9 @@ var wordEvent = document.getElementById('wordEvent')
 var seenButton = document.getElementById('modal-seen')
 var newButton = document.getElementById('modal-new')
 var lives = document.getElementById('lives')
+var loglist = document.getElementById('log-list')
+console.log("loglist:", loglist)
+
 
 var words = [ "lake", "appointment", "sense", "leash", "silk", "assume", "worth", "consensus",
   "incapable", "engine", "stumble", "blast", "combination", "drink", "guide", "craft", "separation",
@@ -19,6 +22,7 @@ var chosenwords = [];
 var currentWord = 0;
 var mistakes = 0;
 var correct = 0;
+var logArray = []
 
 var wordsnumber = [];
 
@@ -159,6 +163,60 @@ function exitTest()
   chosenwords = []
   wordsnumber = []
   mistakes = 0
+
+  // open modal to get username
+  modalBackdrop.style.display = 'block'
+  modal.style.display = 'block'
+
+}
+
+// get username/listen for submit click
+var submit = document.getElementById('modal-submit')
+submit.addEventListener('click', function() {
+
+  var username = document.getElementById('username-input-element').value
+  if (!username) {
+    alert("Please enter a username")
+  }
+  else {
+    // close modal
+    document.getElementById('username-input-element').value = ""
+    modalBackdrop.style.display = 'none'
+    modal.style.display = 'none'
+
+    // reset input
+    username.value = ""
+    updatelog(username)
+  }
+
+})
+
+function updatelog(username) {
+
+  var context = {
+    name: username,
+    score: correct
+  }
+
+  // console.log("logArray unsorted:", logArray)
+  logArray.push(context)
+  logArray.sort(function(a, b) {
+    return b.score - a.score
+  })
+  console.log("logArray sorted:", logArray)
+
+  if (loglist) {
+    var lis = document.querySelectorAll('#log-list li');
+    for (var i = 0; i < lis.length; i++) {
+        li = lis[i]
+        li.parentNode.removeChild(li);
+    }
+  }
+
+  for (var i = 0; i < logArray.length; i++) {
+    var node = Handlebars.templates.leaderboardItem(logArray[i])
+    loglist.insertAdjacentHTML('beforeend', node)
+  }
 
 }
 

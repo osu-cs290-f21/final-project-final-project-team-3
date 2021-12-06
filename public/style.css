@@ -304,6 +304,7 @@ body {
 #modal-seen:hover {
     opacity: 1;
     box-shadow: 0 2px 2px 0 rgba(0,0,0,0.24),0 8px 5px 0 rgba(0,0,0,0.19);
+    cursor: pointer;
 }
 
 #modal-new {
@@ -323,6 +324,7 @@ body {
 #modal-new:hover {
     opacity: 1;
     box-shadow: 0 2px 2px 0 rgba(0,0,0,0.24),0 8px 5px 0 rgba(0,0,0,0.19);
+    cursor: pointer;
 }
 
 .animationCorrect {
@@ -572,7 +574,7 @@ h2 {
       width: 30px;
       height: 30px;
       font-size: 30px;
-      padding-bottom: 5px;
+      /* padding-bottom: 5px; */
       display: flex;
       justify-content: center;
       align-items: center;
