@@ -34,7 +34,6 @@ memoryButton.addEventListener('click', function () {
     blackScreen.style.display = 'block'
     notHidden.style.display = 'none'
     displayWordsCycle()
-    console.log(chosenwords)
   });
 
   function closeModal()
@@ -46,21 +45,17 @@ memoryButton.addEventListener('click', function () {
 
   var modalCancel = document.getElementById('modal-cancel')
   modalCancel.addEventListener('click', function(){
-    console.log("cancel button event listener")
     closeModal()
   })
 
   var modalClose = document.getElementById('modal-close')
   modalClose.addEventListener('click', function(){
-    console.log("close button event listener")
     closeModal()
   })
 
   newButton.addEventListener('click', function () {
-  console.log("currentWord =", currentWord)
   if (chosenwords.indexOf(wordEvent.textContent) !== -1)
   {
-    console.log("Incorrect!")
     // highlighting incorrect animation, DOCUMENTATION: https://css-tricks.com/restart-css-animation/
     this.classList.remove("animationIncorrect");
     this.classList.remove("animationCorrect");
@@ -94,7 +89,6 @@ memoryButton.addEventListener('click', function () {
 
   else
   {
-    console.log("Correct!")
     // highlighting correct animation, DOCUMENTATION: https://css-tricks.com/restart-css-animation/
     this.classList.remove("animationCorrect");
     this.classList.remove("animationIncorrect");
@@ -116,10 +110,8 @@ memoryButton.addEventListener('click', function () {
 
 
 seenButton.addEventListener('click', function () {
-  console.log("currentWord =", currentWord)
   if (chosenwords.indexOf(wordEvent.textContent) === -1)
   {
-    console.log("Incorrect!")
     // highlighting incorrect animation, DOCUMENTATION: https://css-tricks.com/restart-css-animation/
     this.classList.remove("animationIncorrect");
     this.classList.remove("animationCorrect");
@@ -152,7 +144,6 @@ seenButton.addEventListener('click', function () {
 
   else
   {
-    console.log("Correct!")
 
     // highlighting correct animation, DOCUMENTATION: https://css-tricks.com/restart-css-animation/
     this.classList.remove("animationCorrect");
@@ -219,12 +210,12 @@ function updatelog(username) {
     score: correct
   }
 
-  // console.log("logArray unsorted:", logArray)
+
   logArray.push(context)
   logArray.sort(function(a, b) {
     return b.score - a.score
   })
-  // console.log("logArray sorted:", logArray)
+
 
   if (loglist) {
     var lis = document.querySelectorAll('#log-list li');
@@ -251,7 +242,6 @@ function updateLeaderboard(username) {
   }).then(function (resp) {
 
     // Get the response data
-    console.log(resp.data)
 
     // Delete all the old leaderboard li
     var lis = document.querySelectorAll('#board-list li');
@@ -262,10 +252,9 @@ function updateLeaderboard(username) {
 
     // Get array from data
     var newTop5 = resp.data
-      
+
     // Loop over all data
     for (var i = 0; i < newTop5.length; i++){
-      console.log(newTop5[i])
       var node = Handlebars.templates.leaderboardItem(newTop5[i])
 
       // Insert the new node
@@ -289,8 +278,6 @@ function sleep(ms)
 async function displayWordsCycle() {
   for(z=0; z<10; z++)
   {
-    // console.log(chosenwords[i])
-    console.log(z)
     wordToRemember.textContent = chosenwords[z]
     await sleep(1000)
   }

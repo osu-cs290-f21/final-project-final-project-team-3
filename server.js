@@ -35,7 +35,6 @@ app.get('/memory', function (req, res) {
 })
 
 app.post('/reaction/leaderboard', function(req, res, next) {
-    console.log("req.body:", req.body)
     var name = req.body.name
     var score = req.body.score
 
@@ -63,7 +62,6 @@ app.post('/reaction/leaderboard', function(req, res, next) {
 })
 
 app.post('/memory/leaderboard', function(req, res, next) {
-    console.log("req.body:", req.body)
     var name = req.body.name
     var score = req.body.score
 
