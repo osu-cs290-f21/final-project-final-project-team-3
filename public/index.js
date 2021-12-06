@@ -28,13 +28,11 @@ if(window.location.href === 'http://localhost:3000/reaction') {
 
   var modalCancel = document.getElementById('modal-cancel')
   modalCancel.addEventListener('click', function(){
-    console.log("cancel button event listener")
     closeModal()
   })
 
   var modalClose = document.getElementById('modal-close')
   modalClose.addEventListener('click', function(){
-    console.log("close button event listener")
     closeModal()
   })
 
@@ -110,12 +108,12 @@ if(window.location.href === 'http://localhost:3000/reaction') {
       score: time
     }
 
-    // console.log("logArray unsorted:", logArray)
+
     logArray.push(context)
     logArray.sort(function(a, b) {
       return a.score - b.score
     })
-    // console.log("logArray sorted:", logArray)
+
 
     if (loglist) {
       var lis = document.querySelectorAll('#log-list li');
@@ -131,11 +129,10 @@ if(window.location.href === 'http://localhost:3000/reaction') {
     }
   }
 
-  
+
 }
 
 function updateLeaderboard(username) {
-  // add sorting here and only do rest of function if it fits in leaderboard
 
   // We use an axios request library to make a request to my backend
   // Source: https://axios-http.com/docs/post_example
@@ -144,8 +141,7 @@ function updateLeaderboard(username) {
     score: time
   }).then(function (resp) {
 
-    // Get the response data
-    console.log(resp.data)
+
 
     // Delete all the old leaderboard li
     var lis = document.querySelectorAll('#board-list li');
@@ -156,10 +152,9 @@ function updateLeaderboard(username) {
 
     // Get array from data
     var newTop5 = resp.data
-      
+
     // Loop over all data
     for (var i = 0; i < newTop5.length; i++){
-      console.log(newTop5[i])
       var node = Handlebars.templates.leaderboardItem(newTop5[i])
 
       // Insert the new node
