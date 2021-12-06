@@ -6,6 +6,7 @@ var timeOutput = document.getElementById('time-output')
 var loglist = document.getElementById('log-list')
 var modalBackdrop = document.getElementById('modal-backdrop')
 var modal = document.getElementById('modal-username-input')
+var leaderboard = document.getElementById('board-list')
 
 var flag = 0;
 var sTime = 0;
@@ -148,7 +149,7 @@ function updateLeaderboard(username) {
   req.addEventListener('load', function (event) {
     if (event.target.status === 200) {
       var node = Handlebars.templates.leaderboardItem(context)
-      loglist.insertAdjacentHTML('beforeend', node)
+      leaderboard.insertAdjacentHTML('beforeend', node)
     } else {
       alert("Error saving score: " + event.target.response)
     }
